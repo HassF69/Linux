@@ -14,7 +14,10 @@ preprompts = {
 }
 
 def run_tgpt_and_extract_exercises(prompt_file_path, output_dir):
-    choice = 0  # Change this to 1 or 2 if you want to use another preprompt
+    try:
+        choice = int(input())
+    except:
+        choice = 0
     preprompt = preprompts.get(choice, preprompts[0])
 
     if not os.path.exists(output_dir):
