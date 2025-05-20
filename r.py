@@ -1,36 +1,36 @@
 import os
 import re
+import signal
+import subprocess
+import sys
 import pexpect
 import time
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-prompt_file_path = os.path.join(script_dir, "p", "p.txt")
-output_dir = os.path.join(script_dir, "s")
-
-preprompts = {
-    0: "Give me just the code solutions without explanation, DO NOT SAY HERE'S THE CODE OR ANYTHING NO WORDS BUT THE SOLUTION",
-    1: "Correct this code and give the corrected version only, no explanation, just the corrected code",
-    2: "Some garbage preprompt that does nothing useful"
-}
+prompt_file_path = "p/p.txt" 
+output_dir = "s" 
 
 def run_tgpt_and_extract_exercises(prompt_file_path, output_dir):
-    try:
-        choice = int(input())
-    except:
-        choice = 0
-    preprompt = preprompts.get(choice, preprompts[0])
-
+    preprompts = {
+        0: "Give me just the code solutions without explanation, DO NOT SAY HERE'S THE CODE OR ANYTHING NO WORDS BUT THE SOLUTION",
+        1: "Correct this code and give the corrected version only, no explanation, just the corrected code",
+        2: "Some garbage preprompt that does nothing useful"
+    }
+    choice = int(input())
+    preprompt = preprompts[choice]
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     try:
         with open(prompt_file_path, "r") as f:
             prompt_content = f.read()
-    except:
+    except FileNotFoundError:
+        return
+    except Exception as e:
         return
     try:
         child = pexpect.spawn('tgpt -m', encoding='utf-8')
         child.timeout = 30
         child.maxread = 1000000
+        index = child.expect(['Enter', 'Press Ctrl', '┃', pexpect.EOF, pexpect.TIMEOUT])
         child.sendline(preprompt)
         time.sleep(1)
         child.sendline(prompt_content)
@@ -39,11 +39,13 @@ def run_tgpt_and_extract_exercises(prompt_file_path, output_dir):
         try:
             child.expect('╭─ Bot', timeout=60)
             full_output = child.before + '╭─ Bot'
-            time.sleep(30)
+            time.sleep(30)  
             try:
                 child.expect(pexpect.EOF, timeout=5)
                 full_output += child.before
-            except (pexpect.TIMEOUT, pexpect.EOF):
+            except pexpect.TIMEOUT:
+                full_output += child.before
+            except pexpect.EOF:\
                 full_output += child.before
             stdout_data = full_output
         except pexpect.exceptions.TIMEOUT:
@@ -52,10 +54,13 @@ def run_tgpt_and_extract_exercises(prompt_file_path, output_dir):
             child.terminate(force=True)
         except:
             pass
-    except (pexpect.exceptions.EOF, pexpect.exceptions.TIMEOUT, Exception):
+    except pexpect.exceptions.EOF:
+        return
+    except pexpect.exceptions.TIMEOUT:
+        return
+    except Exception as e:
         return
     extract_and_save_solutions(stdout_data, output_dir)
-
 def extract_and_save_solutions(text, output_dir):
     ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
     text = ansi_escape.sub('', text)
@@ -67,8 +72,7 @@ def extract_and_save_solutions(text, output_dir):
         try:
             with open(filepath, "w") as f:
                 f.write(content)
-        except:
+        except Exception as e:
             pass
-
 if __name__ == "__main__":
     run_tgpt_and_extract_exercises(prompt_file_path, output_dir)
