@@ -4,8 +4,8 @@ import pexpect
 import time
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-prompt_file_path = os.path.join(script_dir, "Prompt", "prompt.txt")
-output_dir = os.path.join(script_dir, "solutions")
+prompt_file_path = os.path.join(script_dir, "p", "p.txt")
+output_dir = os.path.join(script_dir, "s")
 
 preprompts = {
     0: "Give me just the code solutions without explanation, DO NOT SAY HERE'S THE CODE OR ANYTHING NO WORDS BUT THE SOLUTION",
