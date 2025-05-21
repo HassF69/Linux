@@ -13,7 +13,7 @@ def run_tgpt_and_extract_exercises(prompt_file_path, output_dir):
     preprompts = {
         0: "Give me just the code solutions without explanation, DO NOT SAY HERE'S THE CODE OR ANYTHING NO WORDS BUT THE SOLUTION",
         1: "Correct this code and give the corrected version only, no explanation, just the corrected code",
-        2: "Some garbage preprompt that does nothing useful"
+        2: " for each one of these questions give the solution in one line and just the solution with nothing else"
     }
     choice = int(input())
     preprompt = preprompts[choice]
