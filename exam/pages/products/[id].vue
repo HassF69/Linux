@@ -10,28 +10,33 @@
       <ProductDetails :product="product" />
     </div>
 
-    <div v-else class="loading-state">
-      <div class="loading-spinner"></div>
-      <p>Loading product details...</p>
+    <div v-else class="error-state">
+      <p>Product not found</p>
     </div>
   </div>
 </template>
 
 <script setup>
+import { getProductById } from '~/data/products'
+
+const route = useRoute()
+const product = getProductById(Number(route.params.id))
+</script>
+
+<!--
+<script setup>
 const product = ref(null)
 const route = useRoute()
 
 onMounted(async () => {
-  try {
-    const response = await fetch(`https://fakestoreapi.com/products/${route.params.id}`)
-    product.value = await response.json()
-  } catch (error) {
-    console.error('Error loading product:', error)
-  }
+
+  const response = await fetch(`https://fakestoreapi.com/products/${route.params.id}`)
+  product.value = await response.json()
+
 })
 </script>
-
-<style>
+-->
+<style scoped>
 .product-detail-page {
   padding: 2rem;
   max-width: 1200px;
@@ -70,29 +75,16 @@ onMounted(async () => {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.loading-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.error-state {
+  text-align: center;
   padding: 3rem;
   color: #666;
   font-size: 1.1rem;
 }
 
-.loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #f3f4f6;
-  border-top: 3px solid #4a90e2;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  animation: spin 1s linear infinite;
+@media (max-width: 768px) {
+  .product-detail-page {
+    padding: 1rem;
+  }
 }
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 </style> 

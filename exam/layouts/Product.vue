@@ -12,7 +12,6 @@
     </header>
 
     <div class="content">
-      <slot />
     </div>
   </div>
 </template>
