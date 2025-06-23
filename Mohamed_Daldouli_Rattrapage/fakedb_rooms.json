@@ -1,0 +1,791 @@
+{
+  "rooms": [
+    {
+      "id": "room1",
+      "name": "Salle de cours 1",
+      "type": "Salle de cours",
+      "capacity": 25,
+      "equipments": [
+        "Tableau noir",
+        "Vidéoprojecteur"
+      ],
+      "location": "Bloc B - 3e étage",
+      "description": "Salle de cours équipée pour Tableau noir, Vidéoprojecteur."
+    },
+    {
+      "id": "room2",
+      "name": "Salle de conférence 2",
+      "type": "Salle de conférence",
+      "capacity": 80,
+      "equipments": [
+        "Micro",
+        "Caméra"
+      ],
+      "location": "Bloc B - RDC",
+      "description": "Salle de conférence équipée pour Micro, Caméra."
+    },
+    {
+      "id": "room3",
+      "name": "Amphithéâtre 3",
+      "type": "Amphithéâtre",
+      "capacity": 25,
+      "equipments": [
+        "Micro",
+        "Climatisation",
+        "Estrade"
+      ],
+      "location": "Bloc C - 1er étage",
+      "description": "Amphithéâtre équipée pour Micro, Climatisation, Estrade."
+    },
+    {
+      "id": "room4",
+      "name": "Amphithéâtre 4",
+      "type": "Amphithéâtre",
+      "capacity": 150,
+      "equipments": [
+        "Estrade",
+        "Climatisation",
+        "Grand écran"
+      ],
+      "location": "Bloc C - Salle centrale",
+      "description": "Amphithéâtre équipée pour Estrade, Climatisation, Grand écran."
+    },
+    {
+      "id": "room5",
+      "name": "Salle TD 5",
+      "type": "Salle TD",
+      "capacity": 50,
+      "equipments": [
+        "Prises électriques",
+        "Tableau blanc"
+      ],
+      "location": "Bloc B - 3e étage",
+      "description": "Salle TD équipée pour Prises électriques, Tableau blanc."
+    },
+    {
+      "id": "room6",
+      "name": "Salle TP 6",
+      "type": "Salle TP",
+      "capacity": 50,
+      "equipments": [
+        "Climatisation",
+        "PC",
+        "Tableau blanc"
+      ],
+      "location": "Bloc A - 2e étage",
+      "description": "Salle TP équipée pour Climatisation, PC, Tableau blanc."
+    },
+    {
+      "id": "room7",
+      "name": "Salle TD 7",
+      "type": "Salle TD",
+      "capacity": 30,
+      "equipments": [
+        "Chaises mobiles",
+        "Prises électriques",
+        "Tableau blanc"
+      ],
+      "location": "Bloc A - 2e étage",
+      "description": "Salle TD équipée pour Chaises mobiles, Prises électriques, Tableau blanc."
+    },
+    {
+      "id": "room8",
+      "name": "Amphithéâtre 8",
+      "type": "Amphithéâtre",
+      "capacity": 80,
+      "equipments": [
+        "Climatisation",
+        "Estrade"
+      ],
+      "location": "Bloc C - 1er étage",
+      "description": "Amphithéâtre équipée pour Climatisation, Estrade."
+    },
+    {
+      "id": "room9",
+      "name": "Salle TD 9",
+      "type": "Salle TD",
+      "capacity": 20,
+      "equipments": [
+        "Tableau blanc",
+        "Chaises mobiles",
+        "Prises électriques"
+      ],
+      "location": "Bloc C - Salle centrale",
+      "description": "Salle TD équipée pour Tableau blanc, Chaises mobiles, Prises électriques."
+    },
+    {
+      "id": "room10",
+      "name": "Salle TP 10",
+      "type": "Salle TP",
+      "capacity": 150,
+      "equipments": [
+        "Climatisation",
+        "Tableau blanc",
+        "PC"
+      ],
+      "location": "Bloc C - Salle centrale",
+      "description": "Salle TP équipée pour Climatisation, Tableau blanc, PC."
+    },
+    {
+      "id": "room11",
+      "name": "Amphithéâtre 11",
+      "type": "Amphithéâtre",
+      "capacity": 100,
+      "equipments": [
+        "Climatisation",
+        "Micro"
+      ],
+      "location": "Bloc A - 1er étage",
+      "description": "Amphithéâtre équipée pour Climatisation, Micro."
+    },
+    {
+      "id": "room12",
+      "name": "Amphithéâtre 12",
+      "type": "Amphithéâtre",
+      "capacity": 50,
+      "equipments": [
+        "Estrade",
+        "Micro",
+        "Grand écran",
+        "Climatisation"
+      ],
+      "location": "Bloc B - RDC",
+      "description": "Amphithéâtre équipée pour Estrade, Micro, Grand écran, Climatisation."
+    },
+    {
+      "id": "room13",
+      "name": "Salle TD 13",
+      "type": "Salle TD",
+      "capacity": 80,
+      "equipments": [
+        "Prises électriques",
+        "Chaises mobiles"
+      ],
+      "location": "Bloc C - Salle centrale",
+      "description": "Salle TD équipée pour Prises électriques, Chaises mobiles."
+    },
+    {
+      "id": "room14",
+      "name": "Salle de conférence 14",
+      "type": "Salle de conférence",
+      "capacity": 50,
+      "equipments": [
+        "Projecteur",
+        "WiFi",
+        "Micro"
+      ],
+      "location": "Bloc C - Salle centrale",
+      "description": "Salle de conférence équipée pour Projecteur, WiFi, Micro."
+    },
+    {
+      "id": "room15",
+      "name": "Salle de cours 15",
+      "type": "Salle de cours",
+      "capacity": 30,
+      "equipments": [
+        "Tableau noir",
+        "Vidéoprojecteur",
+        "Tables"
+      ],
+      "location": "Bloc B - RDC",
+      "description": "Salle de cours équipée pour Tableau noir, Vidéoprojecteur, Tables."
+    },
+    {
+      "id": "room16",
+      "name": "Salle de cours 16",
+      "type": "Salle de cours",
+      "capacity": 80,
+      "equipments": [
+        "Tables",
+        "Vidéoprojecteur",
+        "Tableau noir"
+      ],
+      "location": "Bloc C - Salle centrale",
+      "description": "Salle de cours équipée pour Tables, Vidéoprojecteur, Tableau noir."
+    },
+    {
+      "id": "room17",
+      "name": "Amphithéâtre 17",
+      "type": "Amphithéâtre",
+      "capacity": 150,
+      "equipments": [
+        "Grand écran",
+        "Climatisation",
+        "Estrade"
+      ],
+      "location": "Bloc A - 2e étage",
+      "description": "Amphithéâtre équipée pour Grand écran, Climatisation, Estrade."
+    },
+    {
+      "id": "room18",
+      "name": "Salle TP 18",
+      "type": "Salle TP",
+      "capacity": 100,
+      "equipments": [
+        "Climatisation",
+        "Vidéoprojecteur",
+        "Tableau blanc",
+        "PC"
+      ],
+      "location": "Bloc A - 2e étage",
+      "description": "Salle TP équipée pour Climatisation, Vidéoprojecteur, Tableau blanc, PC."
+    },
+    {
+      "id": "room19",
+      "name": "Salle de révision 19",
+      "type": "Salle de révision",
+      "capacity": 80,
+      "equipments": [
+        "Prises USB",
+        "Tables individuelles"
+      ],
+      "location": "Bloc B - RDC",
+      "description": "Salle de révision équipée pour Prises USB, Tables individuelles."
+    },
+    {
+      "id": "room20",
+      "name": "Salle de cours 20",
+      "type": "Salle de cours",
+      "capacity": 50,
+      "equipments": [
+        "Vidéoprojecteur",
+        "Tables"
+      ],
+      "location": "Bloc B - RDC",
+      "description": "Salle de cours équipée pour Vidéoprojecteur, Tables."
+    },
+    {
+      "id": "room21",
+      "name": "Salle TP 21",
+      "type": "Salle TP",
+      "capacity": 150,
+      "equipments": [
+        "PC",
+        "Vidéoprojecteur",
+        "Tableau blanc"
+      ],
+      "location": "Bloc C - 1er étage",
+      "description": "Salle TP équipée pour PC, Vidéoprojecteur, Tableau blanc."
+    },
+    {
+      "id": "room22",
+      "name": "Salle TP 22",
+      "type": "Salle TP",
+      "capacity": 30,
+      "equipments": [
+        "Tableau blanc",
+        "PC",
+        "Climatisation",
+        "Vidéoprojecteur"
+      ],
+      "location": "Bloc B - 3e étage",
+      "description": "Salle TP équipée pour Tableau blanc, PC, Climatisation, Vidéoprojecteur."
+    },
+    {
+      "id": "room23",
+      "name": "Salle TP 23",
+      "type": "Salle TP",
+      "capacity": 30,
+      "equipments": [
+        "Climatisation",
+        "PC",
+        "Tableau blanc",
+        "Vidéoprojecteur"
+      ],
+      "location": "Bloc A - 1er étage",
+      "description": "Salle TP équipée pour Climatisation, PC, Tableau blanc, Vidéoprojecteur."
+    },
+    {
+      "id": "room24",
+      "name": "Salle de cours 24",
+      "type": "Salle de cours",
+      "capacity": 50,
+      "equipments": [
+        "Tableau noir",
+        "Vidéoprojecteur",
+        "Tables"
+      ],
+      "location": "Bloc C - 1er étage",
+      "description": "Salle de cours équipée pour Tableau noir, Vidéoprojecteur, Tables."
+    },
+    {
+      "id": "room25",
+      "name": "Salle TD 25",
+      "type": "Salle TD",
+      "capacity": 50,
+      "equipments": [
+        "Prises électriques",
+        "Tableau blanc"
+      ],
+      "location": "Bloc C - Salle centrale",
+      "description": "Salle TD équipée pour Prises électriques, Tableau blanc."
+    },
+    {
+      "id": "room26",
+      "name": "Salle de cours 26",
+      "type": "Salle de cours",
+      "capacity": 150,
+      "equipments": [
+        "Tableau noir",
+        "Tables"
+      ],
+      "location": "Bloc B - 3e étage",
+      "description": "Salle de cours équipée pour Tableau noir, Tables."
+    },
+    {
+      "id": "room27",
+      "name": "Salle TP 27",
+      "type": "Salle TP",
+      "capacity": 50,
+      "equipments": [
+        "Tableau blanc",
+        "Vidéoprojecteur",
+        "Climatisation",
+        "PC"
+      ],
+      "location": "Bloc B - 3e étage",
+      "description": "Salle TP équipée pour Tableau blanc, Vidéoprojecteur, Climatisation, PC."
+    },
+    {
+      "id": "room28",
+      "name": "Salle de conférence 28",
+      "type": "Salle de conférence",
+      "capacity": 100,
+      "equipments": [
+        "WiFi",
+        "Projecteur",
+        "Caméra"
+      ],
+      "location": "Bloc B - 3e étage",
+      "description": "Salle de conférence équipée pour WiFi, Projecteur, Caméra."
+    },
+    {
+      "id": "room29",
+      "name": "Salle de révision 29",
+      "type": "Salle de révision",
+      "capacity": 150,
+      "equipments": [
+        "Tables individuelles",
+        "Silence",
+        "Prises USB"
+      ],
+      "location": "Bloc A - 2e étage",
+      "description": "Salle de révision équipée pour Tables individuelles, Silence, Prises USB."
+    },
+    {
+      "id": "room30",
+      "name": "Salle de conférence 30",
+      "type": "Salle de conférence",
+      "capacity": 80,
+      "equipments": [
+        "Projecteur",
+        "Micro",
+        "Caméra"
+      ],
+      "location": "Bloc A - 1er étage",
+      "description": "Salle de conférence équipée pour Projecteur, Micro, Caméra."
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "roomId": 28,
+      "date": "2025-06-23",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "Pr\u00e9paration concours"
+    },
+    {
+      "id": 2,
+      "roomId": 2,
+      "date": "2025-07-01",
+      "time": "14:00",
+      "user": "Nora",
+      "purpose": "TP R\u00e9seaux"
+    },
+    {
+      "id": 3,
+      "roomId": 8,
+      "date": "2025-06-24",
+      "time": "14:00",
+      "user": "Mehdi",
+      "purpose": "Conf\u00e9rence invit\u00e9"
+    },
+    {
+      "id": 4,
+      "roomId": 10,
+      "date": "2025-06-26",
+      "time": "08:00",
+      "user": "Amina",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 5,
+      "roomId": 22,
+      "date": "2025-06-29",
+      "time": "10:00",
+      "user": "Amina",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 6,
+      "roomId": 6,
+      "date": "2025-06-28",
+      "time": "10:00",
+      "user": "Sara",
+      "purpose": "Pr\u00e9paration concours"
+    },
+    {
+      "id": 7,
+      "roomId": 8,
+      "date": "2025-06-28",
+      "time": "08:00",
+      "user": "Sara",
+      "purpose": "Hackathon"
+    },
+    {
+      "id": 8,
+      "roomId": 7,
+      "date": "2025-06-27",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "Pr\u00e9paration concours"
+    },
+    {
+      "id": 9,
+      "roomId": 5,
+      "date": "2025-06-27",
+      "time": "08:00",
+      "user": "Amina",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 10,
+      "roomId": 21,
+      "date": "2025-06-30",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "Soutenance projet"
+    },
+    {
+      "id": 11,
+      "roomId": 18,
+      "date": "2025-06-25",
+      "time": "14:00",
+      "user": "Nora",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 12,
+      "roomId": 13,
+      "date": "2025-07-01",
+      "time": "16:00",
+      "user": "Mehdi",
+      "purpose": "Conf\u00e9rence invit\u00e9"
+    },
+    {
+      "id": 13,
+      "roomId": 23,
+      "date": "2025-06-28",
+      "time": "14:00",
+      "user": "Mehdi",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 14,
+      "roomId": 7,
+      "date": "2025-06-22",
+      "time": "08:00",
+      "user": "Nora",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 15,
+      "roomId": 6,
+      "date": "2025-06-23",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 16,
+      "roomId": 2,
+      "date": "2025-07-01",
+      "time": "14:00",
+      "user": "Mehdi",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 17,
+      "roomId": 6,
+      "date": "2025-07-01",
+      "time": "16:00",
+      "user": "Sara",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 18,
+      "roomId": 6,
+      "date": "2025-06-22",
+      "time": "16:00",
+      "user": "Nora",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 19,
+      "roomId": 5,
+      "date": "2025-06-22",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "TP R\u00e9seaux"
+    },
+    {
+      "id": 20,
+      "roomId": 16,
+      "date": "2025-06-26",
+      "time": "16:00",
+      "user": "Mehdi",
+      "purpose": "TP R\u00e9seaux"
+    },
+    {
+      "id": 21,
+      "roomId": 20,
+      "date": "2025-06-29",
+      "time": "08:00",
+      "user": "Youssef",
+      "purpose": "Conf\u00e9rence invit\u00e9"
+    },
+    {
+      "id": 22,
+      "roomId": 16,
+      "date": "2025-06-24",
+      "time": "16:00",
+      "user": "Mehdi",
+      "purpose": "Soutenance projet"
+    },
+    {
+      "id": 23,
+      "roomId": 17,
+      "date": "2025-06-27",
+      "time": "16:00",
+      "user": "Nora",
+      "purpose": "Conf\u00e9rence invit\u00e9"
+    },
+    {
+      "id": 24,
+      "roomId": 8,
+      "date": "2025-06-30",
+      "time": "14:00",
+      "user": "Amina",
+      "purpose": "TP R\u00e9seaux"
+    },
+    {
+      "id": 25,
+      "roomId": 11,
+      "date": "2025-06-29",
+      "time": "10:00",
+      "user": "Youssef",
+      "purpose": "Hackathon"
+    },
+    {
+      "id": 26,
+      "roomId": 24,
+      "date": "2025-06-30",
+      "time": "14:00",
+      "user": "Youssef",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 27,
+      "roomId": 3,
+      "date": "2025-07-01",
+      "time": "08:00",
+      "user": "Youssef",
+      "purpose": "Hackathon"
+    },
+    {
+      "id": 28,
+      "roomId": 17,
+      "date": "2025-06-30",
+      "time": "14:00",
+      "user": "Sara",
+      "purpose": "TP R\u00e9seaux"
+    },
+    {
+      "id": 29,
+      "roomId": 19,
+      "date": "2025-06-27",
+      "time": "14:00",
+      "user": "Youssef",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 30,
+      "roomId": 26,
+      "date": "2025-06-29",
+      "time": "08:00",
+      "user": "Mehdi",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 31,
+      "roomId": 17,
+      "date": "2025-06-23",
+      "time": "08:00",
+      "user": "Youssef",
+      "purpose": "S\u00e9ance de r\u00e9vision"
+    },
+    {
+      "id": 32,
+      "roomId": 3,
+      "date": "2025-06-22",
+      "time": "10:00",
+      "user": "Sara",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 33,
+      "roomId": 16,
+      "date": "2025-06-30",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 34,
+      "roomId": 11,
+      "date": "2025-06-25",
+      "time": "10:00",
+      "user": "Mehdi",
+      "purpose": "Hackathon"
+    },
+    {
+      "id": 35,
+      "roomId": 8,
+      "date": "2025-06-29",
+      "time": "08:00",
+      "user": "Youssef",
+      "purpose": "Pr\u00e9paration concours"
+    },
+    {
+      "id": 36,
+      "roomId": 4,
+      "date": "2025-06-30",
+      "time": "08:00",
+      "user": "Nora",
+      "purpose": "Hackathon"
+    },
+    {
+      "id": 37,
+      "roomId": 26,
+      "date": "2025-06-28",
+      "time": "14:00",
+      "user": "Youssef",
+      "purpose": "Soutenance projet"
+    },
+    {
+      "id": 38,
+      "roomId": 13,
+      "date": "2025-06-26",
+      "time": "10:00",
+      "user": "Nora",
+      "purpose": "S\u00e9ance de r\u00e9vision"
+    },
+    {
+      "id": 39,
+      "roomId": 20,
+      "date": "2025-06-29",
+      "time": "14:00",
+      "user": "Mehdi",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 40,
+      "roomId": 21,
+      "date": "2025-06-30",
+      "time": "16:00",
+      "user": "Nora",
+      "purpose": "Soutenance projet"
+    },
+    {
+      "id": 41,
+      "roomId": 4,
+      "date": "2025-06-24",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "R\u00e9union Club IA"
+    },
+    {
+      "id": 42,
+      "roomId": 10,
+      "date": "2025-06-24",
+      "time": "14:00",
+      "user": "Ali",
+      "purpose": "Soutenance projet"
+    },
+    {
+      "id": 43,
+      "roomId": 13,
+      "date": "2025-06-23",
+      "time": "10:00",
+      "user": "Youssef",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 44,
+      "roomId": 26,
+      "date": "2025-06-28",
+      "time": "16:00",
+      "user": "Nora",
+      "purpose": "Soutenance projet"
+    },
+    {
+      "id": 45,
+      "roomId": 3,
+      "date": "2025-07-02",
+      "time": "10:00",
+      "user": "Sara",
+      "purpose": "Conf\u00e9rence invit\u00e9"
+    },
+    {
+      "id": 46,
+      "roomId": 29,
+      "date": "2025-07-02",
+      "time": "10:00",
+      "user": "Amina",
+      "purpose": "Cours Java"
+    },
+    {
+      "id": 47,
+      "roomId": 20,
+      "date": "2025-06-26",
+      "time": "10:00",
+      "user": "Nora",
+      "purpose": "TP R\u00e9seaux"
+    },
+    {
+      "id": 48,
+      "roomId": 26,
+      "date": "2025-06-26",
+      "time": "10:00",
+      "user": "Nora",
+      "purpose": "TP R\u00e9seaux"
+    },
+    {
+      "id": 49,
+      "roomId": 5,
+      "date": "2025-06-26",
+      "time": "16:00",
+      "user": "Youssef",
+      "purpose": "S\u00e9ance de r\u00e9vision"
+    },
+    {
+      "id": 50,
+      "roomId": 10,
+      "date": "2025-06-28",
+      "time": "16:00",
+      "user": "Amina",
+      "purpose": "Cours Java"
+    }
+  ]
+}
