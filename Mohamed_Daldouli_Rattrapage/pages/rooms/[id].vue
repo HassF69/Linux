@@ -17,7 +17,6 @@ const bookings = ref([])
 const loading = ref(true)
 onMounted(async () => {
   loading.value = true
-  // Use query to support string IDs
   const res = await fetch(`http://localhost:3001/rooms?id=${route.params.id}`)
   const data = await res.json()
   room.value = data[0] || null
